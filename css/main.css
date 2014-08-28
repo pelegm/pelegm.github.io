@@ -162,6 +162,7 @@ article img {
 
 footer {
    height: 2.5em;
+   text-align: center;
 }
 
 footer #date {
