@@ -153,10 +153,46 @@ img {
 
 a img { text-decoration:none }
 
+.profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.profile-contact {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.profile-photo {
+    flex: 0 0 auto;
+}
+
+.profile-photo img {
+    display: block;
+    width: 200px;
+    max-width: 40vw;
+    height: auto;
+}
+
 address {
     margin-bottom: 20px;
     font-style: normal;
     line-height: 1.42857143;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+
+    .profile-photo img {
+        width: 160px;
+        max-width: 100%;
+    }
 }
 
 b,
