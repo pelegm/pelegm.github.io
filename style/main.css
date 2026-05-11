@@ -153,21 +153,13 @@ img {
 
 a img { text-decoration:none }
 
-.profile {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 24px;
-}
-
 .profile-contact {
-    flex: 1 1 auto;
-    min-width: 0;
     overflow-wrap: anywhere;
 }
 
 .profile-photo {
-    flex: 0 0 auto;
+    float: right;
+    margin: 0 0 16px 2ex;
 }
 
 .profile-photo img {
@@ -184,9 +176,9 @@ address {
 }
 
 @media (max-width: 600px) {
-    .profile {
-        flex-direction: column-reverse;
-        gap: 12px;
+    .profile-photo {
+        float: none;
+        margin: 0 0 12px 0;
     }
 
     .profile-photo img {
