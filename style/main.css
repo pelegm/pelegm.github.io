@@ -1,8 +1,6 @@
 html {
   /*font-family: sans-serif;*/
 	margin: 0px;
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable;
 }
 
 body {
@@ -26,108 +24,17 @@ body {
 
 h1, h2, h3, h4 { font-family: Tahoma,Arial,Verdana,Serif }
 h1 {
-    margin: 0;
+    margin-top: 0px;
+    padding: 10px;
     font-size: 1.8em;
+    text-align: center;
+    background: #f5f5f5; border-bottom: 1px dotted #e8e8e8; margin-bottom: 15px
 }
-h2 {
-    margin: 30px 0 10px 0;
-    scroll-margin-top: 82px;
-}
+h2 { margin: 30px 0 10px 0 }
 h4 { margin: 5px 0 }
 h5 { margin: 0; display: inline }
 
-.site-header {
-    min-height: 64px;
-    background: #ffffff;
-}
-
-.site-header,
-.site-header * {
-    box-sizing: border-box;
-}
-
-.site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 28px;
-    max-width: 1240px;
-    min-height: 64px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-.site-nav a:link,
-.site-nav a:visited,
-.site-nav-pending {
-    position: relative;
-    border: 0;
-    color: #777777;
-    font-size: 92%;
-    text-decoration: none;
-    transition: color 180ms ease;
-}
-
-.site-nav a::after {
-    position: absolute;
-    right: 0;
-    bottom: -7px;
-    left: 0;
-    height: 1px;
-    background: #cc9966;
-    content: "";
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 180ms ease;
-}
-
-.site-nav a:hover,
-.site-nav a:active,
-.site-nav a:focus-visible {
-    color: #996600;
-}
-
-.site-nav a:hover::after,
-.site-nav a:focus-visible::after,
-.site-nav a.is-current::after {
-    transform: scaleX(1);
-}
-
-.site-nav a.is-current:link,
-.site-nav a.is-current:visited {
-    color: #333333;
-}
-
-.site-nav-pending {
-    cursor: default;
-}
-
-.home-title {
-    padding: 36px 20px 46px;
-    text-align: center;
-}
-
-.home-title h1 {
-    color: #585d8b;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 2.55em;
-    font-weight: 300;
-    letter-spacing: 0.02em;
-    line-height: 1.2;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    .site-nav a,
-    .site-nav a::after {
-        transition: none;
-    }
-}
-
-p { margin-left: 0 }
+p { margin-left: 20px }
 
 a:link, a:visited {
     border-bottom:1px dotted #CC9966;
@@ -250,11 +157,6 @@ a img { text-decoration:none }
     overflow-wrap: anywhere;
 }
 
-.contact-section {
-    margin-top: 42px;
-    padding-bottom: 36px;
-}
-
 .profile-photo {
     float: right;
     margin: 0 0 16px 2ex;
@@ -274,38 +176,6 @@ address {
 }
 
 @media (max-width: 600px) {
-    .site-header {
-        min-height: 0;
-    }
-
-    .site-nav {
-        justify-content: center;
-        gap: 4px 14px;
-        min-height: 0;
-        padding: 4px 14px;
-        flex-wrap: wrap;
-    }
-
-    .site-nav a,
-    .site-nav-pending {
-        display: inline-flex;
-        align-items: center;
-        min-height: 44px;
-        padding: 0 2px;
-    }
-
-    .site-nav a::after {
-        bottom: 4px;
-    }
-
-    .home-title {
-        padding: 28px 18px 34px;
-    }
-
-    .home-title h1 {
-        font-size: 2.05em;
-    }
-
     .profile-photo {
         float: none;
         margin: 0 0 12px 0;
