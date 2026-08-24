@@ -41,10 +41,6 @@ h5 { margin: 0; display: inline }
     background: #ffffff;
 }
 
-.home-page .site-header {
-    display: none;
-}
-
 .site-header,
 .site-header * {
     box-sizing: border-box;
